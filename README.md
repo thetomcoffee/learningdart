@@ -9,9 +9,13 @@ Included in the dart code for this program are:
 * variables
 * finals 
 * functions
-* function arguments/parameters
+* function arguments/parameters 
+* curly brackets for function body 
+* formatting strings 
 
-Note, there is a convention in Dart that your code should be in camel case per [Vandad ](https://www.youtube.com/c/vandadnp)
+
+Note, there is a convention in Dart that your code should be in camel case per [Vandad ](https://www.youtube.com/c/vandadnp). 
+Also, Dart can make a string using single or double quotes, like JavaScript. 
 
 <!--
 ## Getting Started
