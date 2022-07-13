@@ -1,11 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
+import 'package:intl/intl_browser.dart';
 
 var firstName = 'John';
 var lastName = 'Smith';
+var now = DateTime.now();
 
 String getFullName(String firstName, String lastName) {
   return '$firstName $lastName';
 }
+
+DateTime whatTimeIsIt() => now;
 
 void main() {
   final sideKickName; //to be assigned later
@@ -18,7 +23,13 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    print(getFullName(firstName, lastName));
+    print('Call to getFullName() fuction returns: ' +
+        getFullName(firstName, lastName));
+
+    final DateFormat formatter = DateFormat('yyyy-MM-dd');
+    final String formatted = formatter.format(whatTimeIsIt());
+    print('Call to whatTimeIsIt() returns: ' + formatted);
+
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
