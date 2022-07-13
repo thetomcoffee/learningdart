@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:intl/intl_browser.dart';
+//import 'package:intl/intl_browser.dart'; //Note:  needed to comment out this line in order to run
+//Windows app.  But intl_browser.dart needed to be there in order to run in Chrome.
 
 var firstName = 'John';
 var lastName = 'Smith';
