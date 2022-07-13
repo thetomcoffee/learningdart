@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
     print('Call to getFullName() function returns: ' +
         getFullName(firstName, lastName));
 
-    final DateFormat formatter = DateFormat.yMEd();
+    final DateFormat formatter = DateFormat.yMEd().add_jms();
     final String formatted = formatter.format(whatTimeIsIt());
     print('Call to whatTimeIsIt() returns: ' + formatted);
 
