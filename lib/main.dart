@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 
-const age = 27;
-const twiceTheAge = age * 2;
-
 void main() {
-  final name = 'Foo';
+  var name = Key('Alex');
   runApp(const MyApp());
 }
 
