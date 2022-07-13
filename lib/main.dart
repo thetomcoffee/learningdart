@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 void main() {
   var name = Key('Alex');
+  final sideKickName; //to be assigned later
   runApp(const MyApp());
 }
 
