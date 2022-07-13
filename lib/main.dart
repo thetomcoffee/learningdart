@@ -23,10 +23,10 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    print('Call to getFullName() fuction returns: ' +
+    print('Call to getFullName() function returns: ' +
         getFullName(firstName, lastName));
 
-    final DateFormat formatter = DateFormat('yyyy-MM-dd');
+    final DateFormat formatter = DateFormat.yMEd();
     final String formatted = formatter.format(whatTimeIsIt());
     print('Call to whatTimeIsIt() returns: ' + formatted);
 
