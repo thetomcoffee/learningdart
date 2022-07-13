@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+String getFullName() {
+  return '';
+}
+
 void main() {
   var name = Key('Alex');
   final sideKickName; //to be assigned later
