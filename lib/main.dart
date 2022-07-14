@@ -13,6 +13,30 @@ String getFullName(String firstName, String lastName) {
 
 DateTime whatTimeIsIt() => now;
 
+void test() {
+  final name = 'Foo';
+
+// indenting and if... else... block layout just like Vandad's
+  if (name == 'Foo') {
+    print('Yes, name is Foo.');
+  } else {
+    print("No, name is not Foo. I don't now what it is.");
+  }
+
+  //like other langs, can have one liner if... with no curly brackets:
+  if (name == 'Foo') print('Yes, the name is still Foo.');
+
+  //if... else... if is like:
+  //if(...) {
+  // ...
+  //} else if () {...} else {...}  ...  Like other langs
+
+  //in single quote strings, escape ' w/ \'
+
+  //also, like JS, can have a string in single quotes, and use double quotes, w/out escaping, in the string.
+  //and vice versa.
+}
+
 void main() {
   final sideKickName; //to be assigned later
   runApp(const MyApp());
@@ -24,12 +48,14 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    print('Call to getFullName() function returns: ' +
-        getFullName(firstName, lastName));
+    // print('Call to getFullName() function returns: ' +
+    //     getFullName(firstName, lastName));
 
-    final DateFormat formatter = DateFormat.yMEd().add_jms();
-    final String formatted = formatter.format(whatTimeIsIt());
-    print('Call to whatTimeIsIt() returns: ' + formatted);
+    // final DateFormat formatter = DateFormat.yMEd().add_jms();
+    // final String formatted = formatter.format(whatTimeIsIt());
+    // print('Call to whatTimeIsIt() returns: ' + formatted);
+
+    test();
 
     return MaterialApp(
       title: 'Flutter Demo',
