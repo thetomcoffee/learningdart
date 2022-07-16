@@ -30,6 +30,8 @@ This repo also includes examples of concepts introduced in
 * List (like arrays in other langs like Java and C#), e.g. `['Foo', 'Bar', 'Baz']`
   * List are 0 based indexes, like other langs
   * List can be fixed or growable see [List&lt;E&gt; class](https://api.dart.dev/stable/2.17.6/dart-core/List-class.html)
+* Sets
+  * List has a single, homogeneous type for each thing.  Set has a unique type for each thing in the set.  
 
 Notes:
 There is a convention in Dart that your code should be in camel case per [Vandad](https://www.youtube.com/c/vandadnp).
