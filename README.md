@@ -29,9 +29,14 @@ This repo also includes examples of concepts introduced in
 * can also create custom operators in classes.  
 * List (like arrays in other langs like Java and C#), e.g. `['Foo', 'Bar', 'Baz']`
   * List are 0 based indexes, like other langs
+  * uses square brackets, e.g. `[]`
   * List can be fixed or growable see [List&lt;E&gt; class](https://api.dart.dev/stable/2.17.6/dart-core/List-class.html)
 * Sets
-  * List has a single, homogeneous type for each thing.  Set has a unique type for each thing in the set.  
+  * List has a single, homogeneous type for each thing.  Set has a unique type for each thing in the set.
+  * Set uses curly brackets, e.g. `{}`
+  * a Set ensures its data isn't duplicated, e.g. `var names = {'foo', 'bar', 'baz'}; names.add('foo'); print(names); //still only prints 'foo, bar, baz'`
+  * Dart will make a set all of the same type, if all elements/things/objects are the same type.
+  * However, Dart will make it `Object` if heterogeneous types, e.g. `var names = {'foo', 1};`
 
 Notes:
 There is a convention in Dart that your code should be in camel case per [Vandad](https://www.youtube.com/c/vandadnp).
