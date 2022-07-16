@@ -14,13 +14,7 @@ String getFullName(String firstName, String lastName) {
 DateTime whatTimeIsIt() => now;
 
 void test() {
-  var names = {'foo', 'bar', 'baz'}; //set example
-  names.add('foo');
-  names.add('bar');
-  names.add('baz');
-  print(names); //notice still only one 'foo' & Set<String> is names
-  var things = {'foo', 1};
-  print(things); //notice things is Set<Object>
+  const person = {'age': 20}; //map example
 }
 
 void main() {
