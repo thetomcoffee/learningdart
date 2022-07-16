@@ -58,7 +58,7 @@ class MyApp extends StatelessWidget {
     test();
 
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Default Flutter Demo',
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -149,6 +149,7 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.headline4,
             ),
+            Text("What is the date and time: " + whatTimeIsIt().toString())
           ],
         ),
       ),
