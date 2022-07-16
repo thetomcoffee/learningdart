@@ -14,23 +14,7 @@ String getFullName(String firstName, String lastName) {
 DateTime whatTimeIsIt() => now;
 
 void test() {
-  final age = 20;
-  final halfOfAge = age /
-      2; //infix operator, b/c it has a operand to the left and right of it
-  final doubleTheAge =
-      age * 2; //"                                                         "
-  print(halfOfAge);
-  print(doubleTheAge);
-
-  var anotherAge = 20;
-  final minusTheAge = --anotherAge; //example of prefix operator
-  print(minusTheAge);
-  print(
-      anotherAge); //the -- prefix operator put the 19 in minusTheAge AND anotherAge
-
-  final name = 'Foo';
-  final nameTimes20 = name * 20; //example of dart * working on strings.
-  print(nameTimes20);
+  ['Foo', 'Bar', 'Baz'];
 }
 
 void main() {
