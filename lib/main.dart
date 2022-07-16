@@ -14,27 +14,23 @@ String getFullName(String firstName, String lastName) {
 DateTime whatTimeIsIt() => now;
 
 void test() {
+  final age = 20;
+  final halfOfAge = age /
+      2; //infix operator, b/c it has a operand to the left and right of it
+  final doubleTheAge =
+      age * 2; //"                                                         "
+  print(halfOfAge);
+  print(doubleTheAge);
+
+  var anotherAge = 20;
+  final minusTheAge = --anotherAge; //example of prefix operator
+  print(minusTheAge);
+  print(
+      anotherAge); //the -- prefix operator put the 19 in minusTheAge AND anotherAge
+
   final name = 'Foo';
-
-// indenting and if... else... block layout just like Vandad's
-  if (name == 'Foo') {
-    print('Yes, name is Foo.');
-  } else {
-    print("No, name is not Foo. I don't now what it is.");
-  }
-
-  //like other langs, can have one liner if... with no curly brackets:
-  if (name == 'Foo') print('Yes, the name is still Foo.');
-
-  //if... else... if is like:
-  //if(...) {
-  // ...
-  //} else if () {...} else {...}  ...  Like other langs
-
-  //in single quote strings, escape ' w/ \'
-
-  //also, like JS, can have a string in single quotes, and use double quotes, w/out escaping, in the string.
-  //and vice versa.
+  final nameTimes20 = name * 20; //example of dart * working on strings.
+  print(nameTimes20);
 }
 
 void main() {
