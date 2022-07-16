@@ -26,6 +26,8 @@ This repo also includes examples of concepts introduced in
 * if... else... if...
 * operators:  +,-,*, and /
 * discussed prefix operators, infix operators, and suffix operators
+* can also create custom operators in classes.  
+* Lists (like arrays in other langs like Java and C#), e.g. '['Foo', 'Bar', 'Baz']'
 
 Notes:
 There is a convention in Dart that your code should be in camel case per [Vandad](https://www.youtube.com/c/vandadnp).
