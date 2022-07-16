@@ -8,9 +8,9 @@ Included in the dart code for this program are:
 
 * keywords, reserved words
 * data types, see [A tour of the Dart language](https://dart.dev/guides/language/language-tour)
-* constants
+* constants (const, Const variables are implicitly final, compile-time constant)
 * variables
-* finals
+* final (can only be set once)
 * functions
 * function arguments/parameters
 * curly brackets for function body
@@ -24,6 +24,8 @@ This repo also includes examples of concepts introduced in
 * conditionals in Dart
 * if... else...
 * if... else... if...
+* operators:  +,-,*, and /
+* discussed prefix operators, infix operators, and suffix operators
 
 Notes:
 There is a convention in Dart that your code should be in camel case per [Vandad](https://www.youtube.com/c/vandadnp).
