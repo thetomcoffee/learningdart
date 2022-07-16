@@ -14,7 +14,18 @@ String getFullName(String firstName, String lastName) {
 DateTime whatTimeIsIt() => now;
 
 void test() {
-  ['Foo', 'Bar', 'Baz'];
+  final names = ['Foo', 'Baar', 'Baaz'];
+  final foo = names[2];
+  print(foo);
+  print(foo.length);
+  int i = 0;
+  while (i < foo.length) {
+    print(foo[i]);
+    i++;
+  }
+  print(names.length);
+  names.add('Tom');
+  print(names.length);
 }
 
 void main() {
