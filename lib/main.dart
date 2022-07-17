@@ -14,12 +14,12 @@ String getFullName(String firstName, String lastName) {
 DateTime whatTimeIsIt() => now;
 
 void test() {
-  var person = {'age': 20, 'name': 'Jason'}; //map example, likes like JSON
-  print(person);
-  person['age'] = 30; //update key
-  print(person);
-  person['lastname'] = 'Argos'; //addes new key, value pair
-  print(person);
+  List<String?>? names = [
+    'John',
+    'Tom',
+    'Todd',
+    null
+  ]; //example of nullable List with datatype of nullable String.
 }
 
 void main() {
