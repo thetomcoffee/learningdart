@@ -30,6 +30,16 @@ void test() {
   print('name: $name');
   name ??= lastName; //"                                          "
   print('name: $name');
+
+  names = null;
+  final length = names?.length ?? 0;
+  //above line is code is equivalent to:
+  // if (names != null) {
+  //   length = names.length;
+  // } else {
+  //   length = 0;
+  // }
+  print('length: $length');
 }
 
 void main() {

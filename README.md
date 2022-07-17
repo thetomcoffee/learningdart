@@ -53,7 +53,8 @@ This repo also includes examples of concepts introduced in
 * see [Sound null safety](https://dart.dev/null-safety) and [Understanding null safety](https://dart.dev/null-safety/understanding-null-safety)
 * at second link, check out `Never` datatype.  Unique to Dart?
 * Also went over cherry-picking non-null values with the ?? operator.
-* `??=` is the null aware assignment operator.  It will only assign the value from the right, if the operand on the left is null. 
+* `??=` is the null aware assignment operator.  It will only assign the value from the right, if the operand on the left is null.
+* `?.` conditionally invoke the member IF member is not null. 
 
 Notes:
 There is a convention in Dart that your code should be in camel case per [Vandad](https://www.youtube.com/c/vandadnp).
