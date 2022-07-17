@@ -20,7 +20,16 @@ void test() {
   final String? middleName = 'bar';
   final String? lastName = 'baz';
   final firstNonNullValue = (firstName ?? middleName) ?? lastName;
+  print('firstNonNullValue is: ');
   print(firstNonNullValue);
+  print('Testing null aware assignment operator: ');
+  String? name;
+  name ??= firstName; //null aware assignment operator example
+  print('name: $name');
+  name ??= middleName; //only assigns value to name if it is not null
+  print('name: $name');
+  name ??= lastName; //"                                          "
+  print('name: $name');
 }
 
 void main() {
