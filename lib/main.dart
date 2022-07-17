@@ -14,12 +14,13 @@ String getFullName(String firstName, String lastName) {
 DateTime whatTimeIsIt() => now;
 
 void test() {
-  List<String?>? names = [
-    'John',
-    'Tom',
-    'Todd',
-    null
-  ]; //example of nullable List with datatype of nullable String.
+  List<String?>? names = ['John', 'Tom', 'Todd', null];
+  print(names); //example of nullable List with datatype of nullable String.
+  final String? firstName = null;
+  final String? middleName = 'bar';
+  final String? lastName = 'baz';
+  final firstNonNullValue = (firstName ?? middleName) ?? lastName;
+  print(firstNonNullValue);
 }
 
 void main() {
