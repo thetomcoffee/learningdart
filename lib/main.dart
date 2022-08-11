@@ -47,8 +47,9 @@ class Person {
 
   void eat() {}
 
-  void printName() {
-    print('$firstName $lastName');
+//printName() returns a string concat of the first and last name.
+  String printName() {
+    return '$firstName $lastName';
   }
 }
 
@@ -71,6 +72,9 @@ class MyApp extends StatelessWidget {
     // print('Call to whatTimeIsIt() returns: ' + formatted);
 
     test(AnimalType.cat);
+
+    var aPerson = new Person('Joe', 'Smith');
+    print(aPerson.printName());
 
     return MaterialApp(
       title: 'Default Flutter Demo',
