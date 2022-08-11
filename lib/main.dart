@@ -19,15 +19,18 @@ enum AnimalType { cat, dog, rabbit }
 
 void test(AnimalType animalType) {
   print(animalType);
-  //could, but not recommened, use if statement on an enum:
-  if (animalType == AnimalType.cat) {
-    print("It's a cat!");
-  } else {
-    if (animalType == AnimalType.dog) {
-      //do something else
-    }
-  }
   //recommended to use a switch statement instead of if... else if... else if... else, etc.
+
+  switch (animalType) {
+    case AnimalType.cat:
+      print('Cat');
+      break;
+    case AnimalType.dog:
+      print('Dog');
+      break;
+    default:
+      print('Unknown animal type');
+  }
 }
 
 void main() {
