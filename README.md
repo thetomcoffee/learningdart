@@ -71,7 +71,7 @@ Note in Dart, curly brackets are preferred instead of using => shorthand.
 * can refer to using the dot notation, e.g. `enum PersonProperties { firstName, lastName, ... } ... PersonProperties.firstName.name //prints out name`, again like C# and other langs
 * Vandad then explains `return` and `break`.  They function like other programming langs.
 * Classes
-  * uses encapsulation (OOP concept) to put methods and properties in the same object, just like Java, C#, etc. 
+  * uses encapsulation (OOP concept) to put methods and properties in the same object, just like Java, C#, etc.
   * upper case the first letter of every word, e.g. `class Employee...`
   * Vandad covered instances and object. e.g. `final myPerson = new Person();`
 * Object
@@ -81,7 +81,7 @@ Note in Dart, curly brackets are preferred instead of using => shorthand.
   * also called initializers
   * constructor setup is different than C#
     * C# example:
-    `public class Person
+    <code>public class Person
 {
    private string last;
    private string first;
@@ -93,7 +93,7 @@ Note in Dart, curly brackets are preferred instead of using => shorthand.
    }
 
    // Remaining implementation of Person class.
-}`
+}</code>
 * Dart example:
     `class Person {
   String firstName;
