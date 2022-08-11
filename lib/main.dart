@@ -17,8 +17,17 @@ enum PersonProperties { firstName, lastName, age }
 
 enum AnimalType { cat, dog, rabbit }
 
-void test() {
-  print(PersonProperties.age);
+void test(AnimalType animalType) {
+  print(animalType);
+  //could, but not recommened, use if statement on an enum:
+  if (animalType == AnimalType.cat) {
+    print("It's a cat!");
+  } else {
+    if (animalType == AnimalType.dog) {
+      //do something else
+    }
+  }
+  //recommended to use a switch statement instead of if... else if... else if... else, etc.
 }
 
 void main() {
@@ -39,7 +48,7 @@ class MyApp extends StatelessWidget {
     // final String formatted = formatter.format(whatTimeIsIt());
     // print('Call to whatTimeIsIt() returns: ' + formatted);
 
-    test();
+    test(AnimalType.cat);
 
     return MaterialApp(
       title: 'Default Flutter Demo',
