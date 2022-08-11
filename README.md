@@ -81,7 +81,8 @@ Note in Dart, curly brackets are preferred instead of using => shorthand.
   * also called initializers
   * constructor setup is different than C#
     * C# example:
-    <code>public class Person
+    ```public class Person
+
 {
    private string last;
    private string first;
@@ -93,9 +94,11 @@ Note in Dart, curly brackets are preferred instead of using => shorthand.
    }
 
    // Remaining implementation of Person class.
-}</code>
+}```
+
 * Dart example:
-    `class Person {
+
+    ```class Person {
   String firstName;
   String lastName;
   //constructor example:
@@ -113,7 +116,9 @@ Note in Dart, curly brackets are preferred instead of using => shorthand.
   String printName() {
     return '$firstName $lastName';
   }
-}`
+
+}```
+
 * methods
   * a function on the class, e.g. `main()`
 
