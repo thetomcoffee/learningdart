@@ -54,7 +54,7 @@ This repo also includes examples of concepts introduced in
 * at second link, check out `Never` datatype.  Unique to Dart?
 * Also went over cherry-picking non-null values with the `??` operator.
 * `??=` is the null aware assignment operator.  It will only assign the value from the right, if the operand on the left is null.
-* `?.` conditionally invoke the member IF member is not null. 
+* `?.` conditionally invoke the member IF member is not null.
 
 Notes:
 There is a convention in Dart that your code should be in camel case per [Vandad](https://www.youtube.com/c/vandadnp).
@@ -65,10 +65,14 @@ Note in Dart, curly brackets are preferred instead of using => shorthand.
 
 ## Chapter 6 - Dart enumerations, classes and objects
 
-* enumerations are named lists of enumerated items 
+* enumerations are named lists of enumerated items
 * create using reserve word `enum` like other programming langs
 * instead of using camel case, use upper case for the first letter of all words, e.g. `PersonPlaceOrThing`
-* can refer to using the dot notation, e.g. `enum PersonProperties { firstName, lastName, ... } ... PersonProperties.firstName.name //prints out name`, again like C# and other langs 
+* can refer to using the dot notation, e.g. `enum PersonProperties { firstName, lastName, ... } ... PersonProperties.firstName.name //prints out name`, again like C# and other langs
+* Vandad then explains `return` and `break`.  They function like other programming langs.
+* Classes
+  * uses encapsulation (OOP concept) to put methods and properties in the same object, just like Java, C#, etc. 
+  * upper case the first letter of every word, e.g. `class Employee...`
 
 <!--
 ## Getting Started

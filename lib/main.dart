@@ -33,6 +33,14 @@ void test(AnimalType animalType) {
   }
 }
 
+class Person {
+  var firstName = "Bob";
+  var lastName = 'Smith';
+  void wakeUp() {}
+  void goToSleep() {}
+  void eat() {}
+}
+
 void main() {
   final sideKickName; //to be assigned later
   runApp(const MyApp());
