@@ -63,6 +63,13 @@ After saving code, Ctrl + S in Windows, the code is hot reloaded, and updated co
 String formatting in Dart, e.g. '$firstName $lastName' is like string interpolation in C#.
 Note in Dart, curly brackets are preferred instead of using => shorthand.
 
+## Chapter 6 - Dart enumerations, classes and objects
+
+* enumerations are named lists of enumerated items 
+* create using reserve word `enum` like other programming langs
+* instead of using camel case, use upper case for the first letter of all words, e.g. `PersonPlaceOrThing`
+* can refer to using the dot notation, e.g. `enum PersonProperties { firstName, lastName, ... } ... PersonProperties.firstName.name //prints out name`, again like C# and other langs 
+
 <!--
 ## Getting Started
 

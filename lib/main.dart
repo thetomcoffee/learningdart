@@ -13,33 +13,12 @@ String getFullName(String firstName, String lastName) {
 
 DateTime whatTimeIsIt() => now;
 
-void test() {
-  List<String?>? names = ['John', 'Tom', 'Todd', null];
-  print(names); //example of nullable List with datatype of nullable String.
-  final String? firstName = null;
-  final String? middleName = 'bar';
-  final String? lastName = 'baz';
-  final firstNonNullValue = (firstName ?? middleName) ?? lastName;
-  print('firstNonNullValue is: ');
-  print(firstNonNullValue);
-  print('Testing null aware assignment operator: ');
-  String? name;
-  name ??= firstName; //null aware assignment operator example
-  print('name: $name');
-  name ??= middleName; //only assigns value to name if it is not null
-  print('name: $name');
-  name ??= lastName; //"                                          "
-  print('name: $name');
+enum PersonProperties { firstName, lastName, age }
 
-  names = null;
-  final length = names?.length ?? 0;
-  //above line is code is equivalent to:
-  // if (names != null) {
-  //   length = names.length;
-  // } else {
-  //   length = 0;
-  // }
-  print('length: $length');
+enum AnimalType { cat, dog, rabbit }
+
+void test() {
+  print(PersonProperties.age);
 }
 
 void main() {
