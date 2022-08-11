@@ -79,6 +79,41 @@ Note in Dart, curly brackets are preferred instead of using => shorthand.
 * constructors
   * special logic that builds the object or class.  (Just like Java and C#)
   * also called initializers
+  * constructor setup is different than C#
+    * C# example:
+    `public class Person
+{
+   private string last;
+   private string first;
+
+   public Person(string lastName, string firstName)
+   {
+      last = lastName;
+      first = firstName;
+   }
+
+   // Remaining implementation of Person class.
+}`
+* Dart example:
+    `class Person {
+  String firstName;
+  String lastName;
+  //constructor example:
+  Person(this.firstName, this.lastName);
+
+  void wakeUp() {
+    return;
+  }
+
+  void goToSleep() {}
+
+  void eat() {}
+
+  //printName() returns a string concat of the first and last name.
+  String printName() {
+    return '$firstName $lastName';
+  }
+}`
 * methods
   * a function on the class, e.g. `main()`
 
