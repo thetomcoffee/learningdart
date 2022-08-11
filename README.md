@@ -73,6 +73,14 @@ Note in Dart, curly brackets are preferred instead of using => shorthand.
 * Classes
   * uses encapsulation (OOP concept) to put methods and properties in the same object, just like Java, C#, etc. 
   * upper case the first letter of every word, e.g. `class Employee...`
+  * Vandad covered instances and object. e.g. `final myPerson = new Person();`
+* Object
+  * instance of a class
+* constructors
+  * special logic that builds the object or class.  (Just like Java and C#)
+  * also called initializers
+* methods
+  * a function on the class, e.g. `main()`
 
 <!--
 ## Getting Started

@@ -34,11 +34,22 @@ void test(AnimalType animalType) {
 }
 
 class Person {
-  var firstName = "Bob";
-  var lastName = 'Smith';
-  void wakeUp() {}
+  String firstName;
+  String lastName;
+  //constructor example:
+  Person(this.firstName, this.lastName);
+
+  void wakeUp() {
+    return;
+  }
+
   void goToSleep() {}
+
   void eat() {}
+
+  void printName() {
+    print('$firstName $lastName');
+  }
 }
 
 void main() {
