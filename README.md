@@ -4,11 +4,11 @@ This project is my "learningdart" repo based off
 Chapter 3 - Introduction to Dart from:
 [37 hour flutter course](https://www.youtube.com/watch?v=VPvVD8t02U8)
 See: 
-⌨️ (01:14:42) Introduction to Dart
-⌨️ (02:01:26) Dart Control Statements and Collections
-⌨️ (02:46:44) Sound Null safety in Dart
-⌨️ (03:27:12) Dart Enumerations, Classes and Objects
-⌨️ (04:18:36) Advanced Dart
+* (01:14:42) Introduction to Dart
+* (02:01:26) Dart Control Statements and Collections
+* (02:46:44) Sound Null safety in Dart
+* (03:27:12) Dart Enumerations, Classes and Objects
+* (04:18:36) Advanced Dart
 
 Included in the dart code for this program are:
 
