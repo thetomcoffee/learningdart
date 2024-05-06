@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
 //import 'package:intl/intl_browser.dart'; //Note:  needed to comment out this line in order to run
 //Windows app.  But intl_browser.dart needed to be there in order to run in Chrome.
 
@@ -73,7 +72,7 @@ class MyApp extends StatelessWidget {
 
     test(AnimalType.cat);
 
-    var aPerson = new Person('Joe', 'Smith');
+    var aPerson = Person('Joe', 'Smith');
     print(aPerson.printName());
 
     return MaterialApp(
@@ -166,7 +165,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Text(
               '$_counter',
-              style: Theme.of(context).textTheme.headline4,
+              style: Theme.of(context).textTheme.headlineMedium,
             ),
             Text("What is the date and time: " + whatTimeIsIt().toString())
           ],
