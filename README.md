@@ -133,6 +133,98 @@ class Person {
 * methods
   * a function on the class, e.g. `main()`
 
+## Chapter 7 - Advanced Dart
+
+Extensions
+Can add an extension to a class using, e.g. on Person class:
+
+```Dart
+extension FullName on Persion {
+  String get fullName => '$firstName $lastName';
+}
+```
+
+Future
+Futures are data to be returned in the fututer. Uses asych programming. 
+
+e.g. 
+```Dart
+Future<int> heavyFutureThatMultiplesByTwo(int a) {
+  return Future.delayed(const Duration(seconds: 3), () => a * 2);
+}
+```
+In order to use/call a Future, must use async and await as in this example:
+```Dart
+void test() async {
+  final result = await heavyFutureThatMultiplesByTwo(10);
+  print(result);
+}
+```
+
+Streams
+Streams are an asynchronous "pipe" of data. They may be continuous, like time is a continuous stream. Can periodically or continuously provide values. 
+
+Basic Stream example:
+```Dart
+Stream<String> getName() {
+  return Stream.periodic(const Duration(seconds: 1), (value) {
+    return 'Foo';
+  });
+}
+```
+calling Stream example:
+```Dart
+void test() async {
+  await for (final value in getName()) {
+    print(value);
+  }
+  print('Steam finished working');
+}
+```
+
+Generators
+A function that returns a list of things but internally calculates that data in a simple way. Generators generate "iterables" marked with sync* and async*. 
+
+Example generator:
+```Dart
+Iterable<int> getOneTwoThree() sync* {
+  yield 1;
+  yield 2;
+  yield 3;
+}
+```
+An Iterable is like a lazy list that get calculated on the fly. 
+Using `async*` returns a stream, using `sync*` returns a List. 
+
+Exmaple of calling a Generator:
+```Dart
+void test() {
+  for (final value in getOneeTwoThree()) {
+    print(value);
+    if (value == 2) {
+      break;
+    }
+  }
+}
+```
+
+Generics 
+Allows us to avoid writting the same code over and over again. 
+
+Example using generic types `A` and `B`:
+```Dart
+class Pair<A, B> {
+  final A value1;
+  final B value2;
+  Pair(this.value1, this.value2);
+}
+```
+
+## Chapter 8 - Project Setup
+To go directly to the video for chapter 8, see:
+[Chapter 8 - Project Setup](https://www.youtube.com/watch?v=VPvVD8t02U8&t=18041s)
+
+
 <!--
 ## Getting Started
 
