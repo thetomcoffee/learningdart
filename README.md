@@ -36,7 +36,7 @@ This repo also includes examples of concepts introduced in
 * discussed prefix operators, infix operators, and suffix operators
 * can also create custom operators in classes.  
 * Lists
-  * like arrays in other langs like Java and C#), e.g. `['Foo', 'Bar', 'Baz']`
+  * like arrays in other langs, like Java and C#) e.g. `['Foo', 'Bar', 'Baz']`
   * List are 0 based indexes, like other langs
   * uses square brackets, e.g. `[]`
   * List can be fixed or growable see [List&lt;E&gt; class](https://api.dart.dev/stable/2.17.6/dart-core/List-class.html)
@@ -48,6 +48,7 @@ This repo also includes examples of concepts introduced in
   * However, Dart will make it `Object` if heterogeneous types, e.g. `var names = {'foo', 1};`
 * Maps
   * a key-value pair of information
+  * e.g. `final Map<int, String> aMapOfIntsAndsStrings = {0: "Red", 1: "Blue" , 2: "Yellow"};`
   * like a dictionary in other langs
   * also like JSON
   * each Key must be unique
@@ -55,7 +56,7 @@ This repo also includes examples of concepts introduced in
 
 ## Chapter 5:   Sound Null-safety in Dart
 
-* In Dart 2.0, types are null safe by default, but can be make null.
+* In Dart 2.0, types are null safe by default, but can be made null. e.g. `int?`
 * see [Sound null safety](https://dart.dev/null-safety) and [Understanding null safety](https://dart.dev/null-safety/understanding-null-safety)
 * at second link, check out `Never` datatype.  Unique to Dart?
 * Also went over cherry-picking non-null values with the `??` operator.
