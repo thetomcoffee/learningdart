@@ -225,6 +225,39 @@ class Pair<A, B> {
 To go directly to the video for chapter 8, see:
 [Chapter 8 - Project Setup](https://www.youtube.com/watch?v=VPvVD8t02U8&t=18041s)
 
+Went over basic scaffold of project created by:
+```
+flutter create --org dev.tomcoffee mynotes
+```
+Looked at android, ios, test, about other folders and files that are included by default by flutter create.
+
+Went over pubspec.yaml, including app name and description (I change mynotes default text. Discussed versions, environment, dependencies, dev_dependencies, and assets. 
+
+Also looked at `pub.dev`, including `firebase_core`.
+
+Then, opened up a terminal in VS Code, and added the following dependencies:
+```
+flutter pub add firebase_core
+flutter pub add firebase_auth 
+flutter pub add cloud_firestore
+flutter pub add firebase_analytics
+```
+
+Also, flutter_lints, dev_dependency, was out of date, so ran:
+```
+flutter pub outdated
+flutter pub upgrade --major-versions
+```
+and then, in pubspec.yaml, it updated flutter_lints:
+```
+ flutter_lints: ^4.0.0
+ ```
+
+## Chapter 9 - iOS App Setup
+To go directly to the video for chapter 9, see:
+[Chapter 9 - iOS App Setup](https://www.youtube.com/watch?v=VPvVD8t02U8&t=20910s)
+
+
 
 <!--
 ## Getting Started
