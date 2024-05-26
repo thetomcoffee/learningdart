@@ -239,7 +239,7 @@ To go directly to the video for chapter 8, see:
 
 Went over basic scaffold of project created by:
 
-```
+```bash
 flutter create --org dev.tomcoffee mynotes
 ```
 
