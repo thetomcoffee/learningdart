@@ -106,7 +106,7 @@ public class Person
 }
 ```
 
-  * Dart example:
+* Dart example:
 
 ```Dart
 class Person {
@@ -167,7 +167,7 @@ void test() async {
 ```
 
 Streams
-Streams are an asynchronous "pipe" of data. They may be continuous, like time is a continuous stream. Can periodically or continuously provide values. 
+Streams are an asynchronous "pipe" of data. They may be continuous, like time is a continuous stream. Can periodically or continuously provide values.
 
 Basic Stream example:
 
@@ -191,7 +191,7 @@ void test() async {
 ```
 
 Generators
-A function that returns a list of things but internally calculates that data in a simple way. Generators generate "iterables" marked with sync* and async*. 
+A function that returns a list of things but internally calculates that data in a simple way. Generators generate "iterables" marked with sync*and async*.
 
 Example generator:
 
@@ -203,10 +203,10 @@ Iterable<int> getOneTwoThree() sync* {
 }
 ```
 
-An Iterable is like a lazy list that get calculated on the fly. 
-Using `async*` returns a stream, using `sync*` returns a List. 
+An Iterable is like a lazy list that get calculated on the fly.
+Using `async*` returns a stream, using `sync*` returns a List.
 
-Exmaple of calling a Generator:
+Example of calling a Generator:
 
 ```Dart
 void test() {
@@ -219,13 +219,8 @@ void test() {
 }
 ```
 
-<<<<<<< HEAD
 Generics
-Allows us to avoid writting the same code over and over again. 
-=======
-Generics 
-Allows us to avoid writing the same code over and over again. 
->>>>>>> 04bebaf0882b6767623daa16d8dceec1cd964bf5
+Allows us to avoid writting the same code over and over again.
 
 Example using generic types `A` and `B`:
 
@@ -250,7 +245,7 @@ flutter create --org dev.tomcoffee mynotes
 
 Looked at android, ios, test, about other folders and files that are included by default by flutter create.
 
-Went over pubspec.yaml, including app name and description (I change mynotes default text. Discussed versions, environment, dependencies, dev_dependencies, and assets. 
+Went over pubspec.yaml, including app name and description (I change mynotes default text. Discussed versions, environment, dependencies, dev_dependencies, and assets.
 
 Also looked at `pub.dev`, including `firebase_core`.
 
@@ -281,14 +276,11 @@ and then, in pubspec.yaml, it updated flutter_lints:
 To go directly to the video for chapter 9, see:
 [Chapter 9 - iOS App Setup](https://www.youtube.com/watch?v=VPvVD8t02U8&t=20910s)
 
-<<<<<<< HEAD
 Went over Apple developer account, and profile and identifiers setup.
 =======
 In iOS Certificates identify you, as a developer, Profiles, are an identity for your app. An app id, is used by you and Apple to identify what app you're working on. They help with push notifications. Also, discussed Key chain in Apple dev account. Cert creates a private key on your computer, so hooks to Apple. Private key is stored in key chain. Include dev and distribution cert.
 
 Next, deleted existing certs and profiles. From local machine, and from Apple dev account via developer.apple.com.
-
->>>>>>> 04bebaf0882b6767623daa16d8dceec1cd964bf5
 
 <!--
 ## Getting Started
