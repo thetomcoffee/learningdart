@@ -251,7 +251,7 @@ Also looked at `pub.dev`, including `firebase_core`.
 
 Then, opened up a terminal in VS Code, and added the following dependencies:
 
-```
+```bash
 flutter pub add firebase_core
 flutter pub add firebase_auth 
 flutter pub add cloud_firestore
@@ -260,14 +260,14 @@ flutter pub add firebase_analytics
 
 Also, flutter_lints, dev_dependency, was out of date, so ran:
 
-```
+```bash
 flutter pub outdated
 flutter pub upgrade --major-versions
 ```
 
 and then, in pubspec.yaml, it updated flutter_lints:
 
-```
+```bash
  flutter_lints: ^4.0.0
  ```
 
@@ -277,7 +277,7 @@ To go directly to the video for chapter 9, see:
 [Chapter 9 - iOS App Setup](https://www.youtube.com/watch?v=VPvVD8t02U8&t=20910s)
 
 Went over Apple developer account, and profile and identifiers setup.
-=======
+
 In iOS Certificates identify you, as a developer, Profiles, are an identity for your app. An app id, is used by you and Apple to identify what app you're working on. They help with push notifications. Also, discussed Key chain in Apple dev account. Cert creates a private key on your computer, so hooks to Apple. Private key is stored in key chain. Include dev and distribution cert.
 
 Next, deleted existing certs and profiles. From local machine, and from Apple dev account via developer.apple.com.
