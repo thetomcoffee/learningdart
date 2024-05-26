@@ -3,7 +3,8 @@
 This project is my "learningdart" repo based off
 Chapter 3 - Introduction to Dart from:
 [37 hour flutter course](https://www.youtube.com/watch?v=VPvVD8t02U8)
-See: 
+See:
+
 * (01:14:42) Introduction to Dart
 * (02:01:26) Dart Control Statements and Collections
 * (02:46:44) Sound Null safety in Dart
@@ -146,7 +147,7 @@ extension FullName on Persion {
 ```
 
 Future
-Futures are data to be returned in the fututer. Uses asych programming. 
+Futures are data to be returned in the future. Uses asynchronous programming.
 
 e.g. 
 ```Dart
@@ -210,7 +211,7 @@ void test() {
 ```
 
 Generics 
-Allows us to avoid writting the same code over and over again. 
+Allows us to avoid writing the same code over and over again. 
 
 Example using generic types `A` and `B`:
 ```Dart
@@ -257,6 +258,9 @@ and then, in pubspec.yaml, it updated flutter_lints:
 To go directly to the video for chapter 9, see:
 [Chapter 9 - iOS App Setup](https://www.youtube.com/watch?v=VPvVD8t02U8&t=20910s)
 
+In iOS Certificates identify you, as a developer, Profiles, are an identity for your app. An app id, is used by you and Apple to identify what app you're working on. They help with push notifications. Also, discussed Key chain in Apple dev account. Cert creates a private key on your computer, so hooks to Apple. Private key is stored in key chain. Include dev and distribution cert.
+
+Next, deleted existing certs and profiles. From local machine, and from Apple dev account via developer.apple.com.
 
 
 <!--
