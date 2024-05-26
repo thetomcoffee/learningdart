@@ -3,7 +3,8 @@
 This project is my "learningdart" repo based off
 Chapter 3 - Introduction to Dart from:
 [37 hour flutter course](https://www.youtube.com/watch?v=VPvVD8t02U8)
-See: 
+See:
+
 * (01:14:42) Introduction to Dart
 * (02:01:26) Dart Control Statements and Collections
 * (02:46:44) Sound Null safety in Dart
@@ -148,13 +149,16 @@ extension FullName on Persion {
 Future
 Futures are data to be returned in the fututer. Uses asych programming. 
 
-e.g. 
+e.g.:
+
 ```Dart
 Future<int> heavyFutureThatMultiplesByTwo(int a) {
   return Future.delayed(const Duration(seconds: 3), () => a * 2);
 }
 ```
+
 In order to use/call a Future, must use async and await as in this example:
+
 ```Dart
 void test() async {
   final result = await heavyFutureThatMultiplesByTwo(10);
@@ -166,6 +170,7 @@ Streams
 Streams are an asynchronous "pipe" of data. They may be continuous, like time is a continuous stream. Can periodically or continuously provide values. 
 
 Basic Stream example:
+
 ```Dart
 Stream<String> getName() {
   return Stream.periodic(const Duration(seconds: 1), (value) {
@@ -173,7 +178,9 @@ Stream<String> getName() {
   });
 }
 ```
+
 calling Stream example:
+
 ```Dart
 void test() async {
   await for (final value in getName()) {
@@ -187,6 +194,7 @@ Generators
 A function that returns a list of things but internally calculates that data in a simple way. Generators generate "iterables" marked with sync* and async*. 
 
 Example generator:
+
 ```Dart
 Iterable<int> getOneTwoThree() sync* {
   yield 1;
@@ -194,10 +202,12 @@ Iterable<int> getOneTwoThree() sync* {
   yield 3;
 }
 ```
+
 An Iterable is like a lazy list that get calculated on the fly. 
 Using `async*` returns a stream, using `sync*` returns a List. 
 
 Exmaple of calling a Generator:
+
 ```Dart
 void test() {
   for (final value in getOneeTwoThree()) {
@@ -209,10 +219,11 @@ void test() {
 }
 ```
 
-Generics 
+Generics
 Allows us to avoid writting the same code over and over again. 
 
 Example using generic types `A` and `B`:
+
 ```Dart
 class Pair<A, B> {
   final A value1;
@@ -222,13 +233,16 @@ class Pair<A, B> {
 ```
 
 ## Chapter 8 - Project Setup
+
 To go directly to the video for chapter 8, see:
 [Chapter 8 - Project Setup](https://www.youtube.com/watch?v=VPvVD8t02U8&t=18041s)
 
 Went over basic scaffold of project created by:
+
 ```
 flutter create --org dev.tomcoffee mynotes
 ```
+
 Looked at android, ios, test, about other folders and files that are included by default by flutter create.
 
 Went over pubspec.yaml, including app name and description (I change mynotes default text. Discussed versions, environment, dependencies, dev_dependencies, and assets. 
@@ -236,6 +250,7 @@ Went over pubspec.yaml, including app name and description (I change mynotes def
 Also looked at `pub.dev`, including `firebase_core`.
 
 Then, opened up a terminal in VS Code, and added the following dependencies:
+
 ```
 flutter pub add firebase_core
 flutter pub add firebase_auth 
@@ -244,20 +259,24 @@ flutter pub add firebase_analytics
 ```
 
 Also, flutter_lints, dev_dependency, was out of date, so ran:
+
 ```
 flutter pub outdated
 flutter pub upgrade --major-versions
 ```
+
 and then, in pubspec.yaml, it updated flutter_lints:
+
 ```
  flutter_lints: ^4.0.0
  ```
 
 ## Chapter 9 - iOS App Setup
+
 To go directly to the video for chapter 9, see:
 [Chapter 9 - iOS App Setup](https://www.youtube.com/watch?v=VPvVD8t02U8&t=20910s)
 
-
+Went over Apple developer account, and profile and identifiers setup.
 
 <!--
 ## Getting Started
