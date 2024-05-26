@@ -147,7 +147,7 @@ extension FullName on Persion {
 ```
 
 Future
-Futures are data to be returned in the fututer. Uses asych programming. 
+Futures are data to be returned in the future. Uses asynchronous programming.
 
 e.g.:
 
@@ -219,8 +219,13 @@ void test() {
 }
 ```
 
+<<<<<<< HEAD
 Generics
 Allows us to avoid writting the same code over and over again. 
+=======
+Generics 
+Allows us to avoid writing the same code over and over again. 
+>>>>>>> 04bebaf0882b6767623daa16d8dceec1cd964bf5
 
 Example using generic types `A` and `B`:
 
@@ -276,7 +281,14 @@ and then, in pubspec.yaml, it updated flutter_lints:
 To go directly to the video for chapter 9, see:
 [Chapter 9 - iOS App Setup](https://www.youtube.com/watch?v=VPvVD8t02U8&t=20910s)
 
+<<<<<<< HEAD
 Went over Apple developer account, and profile and identifiers setup.
+=======
+In iOS Certificates identify you, as a developer, Profiles, are an identity for your app. An app id, is used by you and Apple to identify what app you're working on. They help with push notifications. Also, discussed Key chain in Apple dev account. Cert creates a private key on your computer, so hooks to Apple. Private key is stored in key chain. Include dev and distribution cert.
+
+Next, deleted existing certs and profiles. From local machine, and from Apple dev account via developer.apple.com.
+
+>>>>>>> 04bebaf0882b6767623daa16d8dceec1cd964bf5
 
 <!--
 ## Getting Started
