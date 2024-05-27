@@ -1,8 +1,12 @@
 # learningdart
 
-This project is my "learningdart" repo based off
+This project is my "learningdart" repo based off:
+[Flutter Course for Beginners – 37-hour Cross Platform App Development Tutorial](https://www.youtube.com/watch?v=VPvVD8t02U8).
+Also see the GitHub repo for this course at:
+[https://github.com/vandadnp/mynotes-course](https://github.com/vandadnp/mynotes-course)
+
 Chapter 3 - Introduction to Dart from:
-[37 hour flutter course](https://www.youtube.com/watch?v=VPvVD8t02U8)
+[37 hour flutter course, chapter 3](https://www.youtube.com/watch?v=VPvVD8t02U8&t=4482s)
 See:
 
 * (01:14:42) Introduction to Dart
@@ -281,6 +285,16 @@ Went over Apple developer account, and profile and identifiers setup.
 In iOS Certificates identify you, as a developer, Profiles, are an identity for your app. An app id, is used by you and Apple to identify what app you're working on. They help with push notifications. Also, discussed Key chain in Apple dev account. Cert creates a private key on your computer, so hooks to Apple. Private key is stored in key chain. Include dev and distribution cert.
 
 Next, deleted existing certs and profiles. From local machine, and from Apple dev account via developer.apple.com.
+
+## Chapter 10 - Android App Setup
+
+Discussed install of *[ADB]: Android Debug Bridge
+and scrcpy for mobile development. Install
+*[ADB]: Android Debug Bridge
+before scrcpy.
+
+See GH repo for scrcpy:
+[https://github.com/genymobile/scrcpy](https://github.com/genymobile/scrcpy)
 
 <!--
 ## Getting Started
