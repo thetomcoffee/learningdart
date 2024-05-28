@@ -288,7 +288,7 @@ Next, deleted existing certs and profiles. From local machine, and from Apple de
 
 ## Chapter 10 - Android App Setup
 
-Discussed install of *[ADB]: Android Debug Bridge
+Discussed install of <abbr title="Android Debug Bridge">ADB</abbr>
 and scrcpy for mobile development. Install
 *[ADB]: Android Debug Bridge
 before scrcpy.
