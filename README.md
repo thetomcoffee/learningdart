@@ -1,5 +1,7 @@
 # learningdart
 
+*[ADB]: Android Debug Bridge
+
 This project is my "learningdart" repo based off:
 [Flutter Course for Beginners – 37-hour Cross Platform App Development Tutorial](https://www.youtube.com/watch?v=VPvVD8t02U8).
 Also see the GitHub repo for this course at:
@@ -288,10 +290,8 @@ Next, deleted existing certs and profiles. From local machine, and from Apple de
 
 ## Chapter 10 - Android App Setup
 
-Discussed install of <abbr title="Android Debug Bridge">ADB</abbr>
-and scrcpy for mobile development. Install
-*[ADB]: Android Debug Bridge
-before scrcpy.
+Discussed install of ADB
+and scrcpy for mobile development. Install ADB before scrcpy.
 
 See GH repo for scrcpy:
 [https://github.com/genymobile/scrcpy](https://github.com/genymobile/scrcpy)
