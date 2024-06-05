@@ -1,8 +1,12 @@
 # learningdart
 
-This project is my "learningdart" repo based off
+This project is my "learningdart" repo based off:
+[Flutter Course for Beginners – 37-hour Cross Platform App Development Tutorial](https://www.youtube.com/watch?v=VPvVD8t02U8).
+Also see the GitHub repo for this course at:
+[https://github.com/vandadnp/mynotes-course](https://github.com/vandadnp/mynotes-course)
+
 Chapter 3 - Introduction to Dart from:
-[37 hour flutter course](https://www.youtube.com/watch?v=VPvVD8t02U8)
+[37 hour flutter course, chapter 3](https://www.youtube.com/watch?v=VPvVD8t02U8&t=4482s)
 See:
 
 * (01:14:42) Introduction to Dart
@@ -303,6 +307,26 @@ Next, setup in Xcode. Go to app in VS Code, go to iOS folder, and reveal in Find
 After all then, can debug run from Xcode on device connected to Mac. Ran successfully for me. Build failed for presenter and he debugged. Needed to change iOS # for target build and fix with Coco Pods sp? Once a build has been done once, the build will be cached and it will build faster next time. MyNotes first build took several minutes for about 5700 files.
 
 Now we can run our app from VS Code. Taking a long time, 157 seconds to build, plus some minutes to appear on iPhone. It worked!
+
+## Chapter 10 - Android App Setup
+
+Discussed install of ADB and scrcpy for mobile development. Install ADB before scrcpy.
+
+See GH repo for scrcpy:
+[https://github.com/genymobile/scrcpy](https://github.com/genymobile/scrcpy)
+
+During presentation, when trying to run debug on Android phone, bug came up. Had to do with
+running an old Android phone and the version of the dependencies in the project. Similar
+issue came up in previous iOS chapter. Had to change minSdkVersion in build.gradle.
+Another build error involving `--multidex flag`.
+
+Also, disable screen sleeping. See Android developer settings for your phone.
+
+*[ADB]: Android Debug Bridge
+
+## Chapter 11 - Firebase Backend Setup
+
+[Chapter 11 Video](https://www.youtube.com/watch?v=VPvVD8t02U8)
 
 <!--
 ## Getting Started
