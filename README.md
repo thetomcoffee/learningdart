@@ -278,9 +278,31 @@ To go directly to the video for chapter 9, see:
 
 Went over Apple developer account, and profile and identifiers setup.
 
-In iOS Certificates identify you, as a developer, Profiles, are an identity for your app. An app id, is used by you and Apple to identify what app you're working on. They help with push notifications. Also, discussed Key chain in Apple dev account. Cert creates a private key on your computer, so hooks to Apple. Private key is stored in key chain. Include dev and distribution cert.
+In the Apple app world, Certificates identify you, as a developer, Profiles are an identity for your app. Apple provides a cert for every app that comes from the App Store. An app id, is used by you and Apple to identify what app you're working on. They help with push notifications. Profiles are different between dev and prod "flavors" of an app. They dictate what an app can and can't do, like debugging. Can run live dev on an iPhone, for example, using Xcode. App ID identifies your app and its capabilities.
+
+Also, discussed Key chain in Apple dev account. Cert creates a private key on your computer, so hooks to Apple. Private key is stored in key chain. Include dev and distribution cert. Also, key chain can be used outside the Apple app store, to distribute your app to a cloud host, have a different app store than Apple, and they can send your app to you. Different avenue to get apps on iOS.
 
 Next, deleted existing certs and profiles. From local machine, and from Apple dev account via developer.apple.com.
+
+As part of the setup process for Notes app, we deleted all Apple Dev certifications in our local keychain. On Mac, open Keychain Access, My Certificates tab, search "Apple Dev" if needed, and delete Apple Dev certs. Also, go to developer.apple.com/account and delete all existing certificates. Also, locally, go to `/User/yourusername/Library/MobileDevice/ProvisioningProfiles` and deleted the files there.
+
+Next, create development certificate in Apple developer account. This allows us to test our app on a real device, e.g. iPhone. Created iOS app development cert. On second step on developer account website, go back to your Mac, open Keychain Assistant, and Keychain Access > Certificate Assistant > Request a Certificate from a Certificate Authority. Fill in company/dev email and your name. Then save to disk. The request created a private key, viewable in Keychain Access. File on desktop. Then go back to Apple dev account, and upload cert request file. Uploaded and then downloaded a cert file, opened and added to Keychain.
+
+Then, create a production cert. In Apple dev account, new cert > iOS Distribution (App Store Connect and Ad Hoc). Same process as dev cert. Create request, upload, download cert file, add to keychain.
+
+Next steps, create Identifier in Apple dev account. New Identifier. Select App ID. Enter a description. For Bundle ID, use explicit, and use the org you specified when you created the app, e.g. dev.tomcoffee.mynotes. Then select cababilities in dev account for App ID, e.g. Push Notifications. For this app, skip, continue. Registering an app ID sets it up so no one else can use that identifier.
+
+Debug on Real Device
+
+First, get device id, UUID. Plugin device into Mac. Go to Finder. Select device. At top, hidden selection, click device name, and it rotates between serial number, model number, etc. Click again, UDID, etc. Go to App dev account, Devices, Add Device. Can also do from Xcode.
+
+In Apple dev account, create Profile. Select iOS App Development under Development. Select previously created app id, cert, and device. Give it Provisioning Profile name of MyNotes Dev Profile. Do same for distribution profile. After you download the provisioning files, copy them to `/User/yourusername/Library/MobileDevice/ProvisioningProfiles`.
+
+Next, setup in Xcode. Go to app in VS Code, go to iOS folder, and reveal in Finder. Then, double click Runner.xcwowrkspace to open in Xcode. Select Runnder folder in top left, to to Target in right, select Runner with Flutter icon, select Singing & Capabilities tab, remove check next to "Automatically manage signing". Same for RunnerTests. Then go to Debug button/tab (next to Capability) and make sure "Automatically manage signing" in unselected, for iOS, Provision Profile, select MyNotes Dev Profile. Then go to Release button/tab, and setup Provisioning Profile as well with prod profile. 
+
+After all then, can debug run from Xcode on device connected to Mac. Ran successfully for me. Build failed for presenter and he debugged. Needed to change iOS # for target build and fix with Coco Pods sp? Once a build has been done once, the build will be cached and it will build faster next time. MyNotes first build took several minutes for about 5700 files.
+
+Now we can run our app from VS Code. Taking a long time, 157 seconds to build, plus some minutes to appear on iPhone. It worked!
 
 <!--
 ## Getting Started
