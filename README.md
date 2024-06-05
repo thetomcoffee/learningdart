@@ -294,7 +294,7 @@ Next, create development certificate in Apple developer account. This allows us 
 
 Then, create a production cert. In Apple dev account, new cert > iOS Distribution (App Store Connect and Ad Hoc). Same process as dev cert. Create request, upload, download cert file, add to keychain.
 
-Next steps, create Identifier in Apple dev account. New Identifier. Select App ID. Enter a description. For Bundle ID, use explicit, and use the org you specified when you created the app, e.g. dev.tomcoffee.mynotes. Then select cababilities in dev account for App ID, e.g. Push Notifications. For this app, skip, continue. Registering an app ID sets it up so no one else can use that identifier.
+Next steps, create Identifier in Apple dev account. New Identifier. Select App ID. Enter a description. For Bundle ID, use explicit, and use the org you specified when you created the app, e.g. dev.tomcoffee.mynotes. Then select capabilities in dev account for App ID, e.g. Push Notifications. For this app, skip, continue. Registering an app ID sets it up so no one else can use that identifier.
 
 Debug on Real Device
 
