@@ -331,6 +331,8 @@ Also, disable screen sleeping. See Android developer settings for your phone.
 
 [Chapter 11 Video](https://www.youtube.com/watch?v=VPvVD8t02U8)
 
+See FlutterFire initialization at [https://firebase.flutter.dev/docs/overview](https://firebase.flutter.dev/docs/overview).
+
 <!--
 ## Getting Started
 
