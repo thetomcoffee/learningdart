@@ -310,14 +310,17 @@ Now we can run our app from VS Code. Taking a long time, 157 seconds to build, p
 
 ## Chapter 10 - Android App Setup
 
+[Vandad](https://github.com/vandadnp) mentioned simulators, for iOS, and emulators, for Android. The emulators try to recreate all the aspects of the Android on a host device. The simulator, does not. For example, an iOS simulator from 5 years ago would perform as the host machine performs, not the iOS device from 5 years ago.
+
 Discussed install of ADB and scrcpy for mobile development. Install ADB before scrcpy.
 
 See GH repo for scrcpy:
 [https://github.com/genymobile/scrcpy](https://github.com/genymobile/scrcpy)
 
 During presentation, when trying to run debug on Android phone, bug came up. Had to do with
-running an old Android phone and the version of the dependencies in the project. Similar
-issue came up in previous iOS chapter. Had to change minSdkVersion in build.gradle.
+running an old Android phone and the min version of the dependencies in the project. Similar
+issue came up in previous iOS chapter. Had to change minSdkVersion in `build.gradle`. Also, 
+had to run `flutter clean android` 
 Another build error involving `--multidex flag`.
 
 Also, disable screen sleeping. See Android developer settings for your phone.
