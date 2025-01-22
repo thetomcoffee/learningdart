@@ -333,6 +333,8 @@ Also, disable screen sleeping. See Android developer settings for your phone.
 
 See FlutterFire initialization at [https://firebase.flutter.dev/docs/overview](https://firebase.flutter.dev/docs/overview).
 
+Installed FlutterFire and Firebase CLI. Firebase is a Node applications tool.
+
 <!--
 ## Getting Started
 
