@@ -335,6 +335,20 @@ See FlutterFire initialization at [https://firebase.flutter.dev/docs/overview](h
 
 Installed FlutterFire and Firebase CLI. Firebase is a Node applications tool.
 
+20250522
+
+[FlutterFire Overview](https://firebase.flutter.dev/docs/overview/)
+Imporant to note that:
+"Notice
+
+This page is archived and might not reflect the latest version of the FlutterFire plugins. You can find the latest information on firebase.google.com:
+
+[https://firebase.google.com/docs/flutter/setup](https://firebase.google.com/docs/flutter/setup)"
+
+https://firebase.google.com/docs/flutter/setup?platform=ios
+
+Ran `flutter pub add firebase_core` 
+
 <!--
 ## Getting Started
 
