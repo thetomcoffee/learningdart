@@ -224,7 +224,7 @@ void test() {
 ```
 
 Generics
-Allows us to avoid writting the same code over and over again.
+Allows us to avoid writing the same code over and over again.
 
 Example using generic types `A` and `B`:
 
@@ -247,7 +247,7 @@ Went over basic scaffold of project created by:
 flutter create --org dev.tomcoffee mynotes
 ```
 
-Looked at android, ios, test, about other folders and files that are included by default by flutter create.
+Looked at android, iOS, test, about other folders and files that are included by default by flutter create.
 
 Went over pubspec.yaml, including app name and description (I change mynotes default text. Discussed versions, environment, dependencies, dev_dependencies, and assets.
 
@@ -282,7 +282,7 @@ To go directly to the video for chapter 9, see:
 
 Went over Apple developer account, and profile and identifiers setup.
 
-In the Apple app world, Certificates identify you, as a developer, Profiles are an identity for your app. Apple provides a cert for every app that comes from the App Store. An app id, is used by you and Apple to identify what app you're working on. They help with push notifications. Profiles are different between dev and prod "flavors" of an app. They dictate what an app can and can't do, like debugging. Can run live dev on an iPhone, for example, using Xcode. App ID identifies your app and its capabilities.
+In the Apple app world, Certificates identify you, as a developer, Profiles are an identity for your app. Apple provides a cert for every app that comes from the App Store. An app id, is used by you and Apple to identify what app you're working on. They help with push notifications. Profiles are different between dev and prod "flavors" of an app. They dictate what an app can and can't do, like debugging. Can run live dev on an iPhone, for example, using XCode. App ID identifies your app and its capabilities.
 
 Also, discussed Key chain in Apple dev account. Cert creates a private key on your computer, so hooks to Apple. Private key is stored in key chain. Include dev and distribution cert. Also, key chain can be used outside the Apple app store, to distribute your app to a cloud host, have a different app store than Apple, and they can send your app to you. Different avenue to get apps on iOS.
 
@@ -302,9 +302,9 @@ First, get device id, UUID. Plugin device into Mac. Go to Finder. Select device.
 
 In Apple dev account, create Profile. Select iOS App Development under Development. Select previously created app id, cert, and device. Give it Provisioning Profile name of MyNotes Dev Profile. Do same for distribution profile. After you download the provisioning files, copy them to `/User/yourusername/Library/MobileDevice/ProvisioningProfiles`.
 
-Next, setup in Xcode. Go to app in VS Code, go to iOS folder, and reveal in Finder. Then, double click Runner.xcwowrkspace to open in Xcode. Select Runnder folder in top left, to to Target in right, select Runner with Flutter icon, select Singing & Capabilities tab, remove check next to "Automatically manage signing". Same for RunnerTests. Then go to Debug button/tab (next to Capability) and make sure "Automatically manage signing" in unselected, for iOS, Provision Profile, select MyNotes Dev Profile. Then go to Release button/tab, and setup Provisioning Profile as well with prod profile. 
+Next, setup in XCode. Go to app in VS Code, go to iOS folder, and reveal in Finder. Then, double click Runner.xcwowrkspace to open in XCode. Select Runner folder in top left, to to Target in right, select Runner with Flutter icon, select Singing & Capabilities tab, remove check next to "Automatically manage signing". Same for RunnerTests. Then go to Debug button/tab (next to Capability) and make sure "Automatically manage signing" in unselected, for iOS, Provision Profile, select MyNotes Dev Profile. Then go to Release button/tab, and setup Provisioning Profile as well with prod profile. 
 
-After all then, can debug run from Xcode on device connected to Mac. Ran successfully for me. Build failed for presenter and he debugged. Needed to change iOS # for target build and fix with Coco Pods sp? Once a build has been done once, the build will be cached and it will build faster next time. MyNotes first build took several minutes for about 5700 files.
+After all then, can debug run from XCode on device connected to Mac. Ran successfully for me. Build failed for presenter and he debugged. Needed to change iOS # for target build and fix with Coco Pods sp? Once a build has been done once, the build will be cached and it will build faster next time. MyNotes first build took several minutes for about 5700 files.
 
 Now we can run our app from VS Code. Taking a long time, 157 seconds to build, plus some minutes to appear on iPhone. It worked!
 
@@ -338,16 +338,41 @@ Installed FlutterFire and Firebase CLI. Firebase is a Node applications tool.
 20250522
 
 [FlutterFire Overview](https://firebase.flutter.dev/docs/overview/)
-Imporant to note that:
+Important to note that:
 "Notice
 
 This page is archived and might not reflect the latest version of the FlutterFire plugins. You can find the latest information on firebase.google.com:
 
 [https://firebase.google.com/docs/flutter/setup](https://firebase.google.com/docs/flutter/setup)"
 
-https://firebase.google.com/docs/flutter/setup?platform=ios
+Moved to:
 
-Ran `flutter pub add firebase_core` 
+[https://firebase.google.com/docs/flutter/setup?platform=ios]
+(https://firebase.google.com/docs/flutter/setup?platform=ios)
+
+From that page, went through "Add Firebase to your Flutter app", etc. 
+
+ran the following commands:
+```bash
+npm install firebase
+npm install -g firebase-tools
+firebase login
+firebase init
+```
+Then went through setup process to make a new Firestore. 
+
+Next, ran:
+```bash
+dart pub global activate flutterfire_cli
+```
+
+Updated path to deal with warning about Pub installs executables. 
+
+Next, ran commands under 
+[Step 2: Configure your apps to use Firebase]
+(https://firebase.google.com/docs/flutter/setup?platform=ios#configure-firebase)
+
+
 
 <!--
 ## Getting Started
